@@ -15,30 +15,30 @@ class ApiController extends Controller
 
     public function create(Request $request)
     {
-        $ujian = new ApiModel;
-        $ujian->nama = $request->nama;
-        $ujian->jenis = $request->jenis;
-        $ujian->harga = $request->harga;
-        $ujian->save();
+        $data = new ApiModel;
+        $data->nama = $request->nama;
+        $data->jenis = $request->jenis;
+        $data->harga = $request->harga;
+        $data->save();
 
         return "Data berhasil ditambah!";
     }
 
     public function update(Request $request, $id)
     {
-        $ujian = ApiModel::find($id);
-        $ujian->nama = $request->nama;
-        $ujian->jenis = $request->jenis;
-        $ujian->harga = $request->harga;
-        $ujian->update();
+        $data = ApiModel::find($id);
+        $data->nama = $request->nama;
+        $data->jenis = $request->jenis;
+        $data->harga = $request->harga;
+        $data->update();
 
         return "Data berhasil diubah!";
     }
 
     public function delete($id)
     {
-        $ujian = ApiModel::find($id);
-        $ujian->delete();
+        $data = ApiModel::find($id);
+        $data->delete();
 
         return "Data berhasil dihapus!";
     }

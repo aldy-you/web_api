@@ -1,4 +1,0 @@
--Read me now-
-Untuk menguji crud web api pastikan Anda telah membuat database di phpmyadmin dan seting file .env 
-lalu melakukan perintah migrate di laravel.
-Lalu pastikan Anda telah menginstal Aplikasi Postman untuk menguji crud tersebut.
